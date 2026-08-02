@@ -36,12 +36,12 @@ function SignIn() {
   };
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-gray-100">
+    <div className="flex min-h-screen items-center justify-center bg-slate-800">
       
       
       <form 
         onSubmit={handleSubmit} 
-        className="w-full max-w-sm rounded-lg bg-white p-8 shadow-2xl">
+        className="w-full max-w-sm rounded-lg bg-gray-300 p-8 shadow-2xl">
         
         
         <h2 className="mb-6 text-center text-2xl font-bold text-gray-800">
@@ -88,7 +88,7 @@ function SignIn() {
         
         <button
           type="submit"
-          className="focus:shadow-outline w-full rounded bg-blue-500 py-2 px-4 font-bold text-white hover:bg-blue-600 focus:outline-none"
+          className="focus:shadow-outline w-full rounded bg-teal-500 py-2 px-4 font-bold text-white hover:bg-teal-600 focus:outline-none"
         >
           Sign In
         </button>

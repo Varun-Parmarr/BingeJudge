@@ -4,20 +4,20 @@ import { Link } from 'react-router-dom';
 
 export default function About() {
   return (
-    <div className="min-h-screen bg-gray-50 flex flex-col items-center py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-slate-950 flex flex-col items-center py-12 px-4 sm:px-6 lg:px-8">
       
       {/* Header Section */}
       <div className="max-w-3xl text-center mb-12">
-        <h1 className="text-4xl font-extrabold text-gray-900 mb-4">
+        <h1 className="text-4xl font-extrabold text-white mb-4">
           Welcome to <span className="text-blue-600">BingeJudge</span>
         </h1>
-        <p className="text-lg text-gray-600">
+        <p className="text-lg text-white">
           The ultimate community-driven platform for Movie, Series, and Anime enthusiasts.
         </p>
       </div>
 
       {/* Main Content Grid */}
-      <div className="max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-10 bg-white p-8 rounded-2xl shadow-xl">
+      <div className="max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-10 bg-gray-200 p-8 rounded-2xl shadow-xl">
         
         {/* Section 1: Our Mission */}
         <div className="space-y-4">
