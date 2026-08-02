@@ -8,11 +8,14 @@ const HeroSlider = () => {
 
   // 2. EFFECT: Fetch data from your Backend on load
   useEffect(() => {
-    const fetchMovies = async () => {
-      try {
-        // Replace with your actual API endpoint
-        const response = await fetch('http://localhost:4000/api/media'); 
-        const data = await response.json();
+  const fetchMovies = async () => {
+    try {
+      // Use environment variable, fallback to localhost for local dev
+      const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:4000';
+      const response = await fetch(`${API_URL}/api/media`);
+      const data = await response.json();
+      
+      // ... rest of your code
         
         
         // Randomize the order of the movies array
