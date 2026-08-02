@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import {jwtDecode} from "jwt-decode";
+import MainSlider from "./MainSlider";
 
 export default function Videocard() {
 
@@ -144,24 +145,30 @@ export default function Videocard() {
   };
 
   return (
-    <div className="p-6 bg-gray-50 min-h-screen">
+    
+    <div className="p-6 bg-slate-800 min-h-screen ">
       
-     
+      <div className="ml-10 mr-10 mt-2"><MainSlider/></div>
+      
+
        {/* Media Grid (visible to everyone) */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 ml-12 mr-12 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 ml-10 mr-10 gap-5">
         {items.map((item) => (
           <div
             key={item._id}
             onClick={() => setSelectedItem(item)}
-            className="relative cursor-pointer rounded-lg overflow-hidden hover:scale-110 transform transition-transform duration-300 shadow-2xl"
+            className="relative cursor-pointer rounded-xl overflow-hidden hover:scale-105 transform transition-transform duration-300 shadow-2xl"
           >
             <img
               src={item.imageURL}
               alt={item.title}
               className="w-full h-64 shadow-lg object-cover"
             />
-            <div className="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black to-transparent">
-            <h3 className="text-white font-bold text-lg">{item.title}</h3>
+
+            <div className="absolute bottom-0 left-0 w-full h-2/3 bg-gradient-to-t from-black via-black/80 to-transparent pointer-events-none"></div>
+
+            <div className="absolute bottom-0 left-0 w-full p-4 text-white z-10">
+            <h3 className="font-extrabold text-xl tracking-wide drop-shadow-md truncate">{item.title}</h3>
            </div>
           </div>
         ))}

@@ -42,10 +42,10 @@ export default function Navbar() {
   };
 
   return (
-    <div className="flex justify-between border border-style:solid shadow:3xl space-x-4 p-1">
+    <div className=" flex justify-between shadow:lg space-x-4 p-1 bg-slate-950/80">
       
-     <h1 className="text-3xl p-3 text-gray-900 hover:opacity-80 transition-opacity">
-         <span className="font-extrabold">Binge</span>
+     <h1 className="text-3xl p-3 text-blue-700 hover:opacity-80 transition-opacity">
+         <span className="font-extrabold ">Binge</span>
          <span>Judge</span>
      </h1>
      
@@ -54,7 +54,7 @@ export default function Navbar() {
       </div>
 
 
-     <div className='flex items-center space-x-5'>
+     <div className='flex items-center space-x-5 text-white'>
       <div>
         <Link to="/about" className=" p-2">About</Link>
       </div>
@@ -74,7 +74,7 @@ export default function Navbar() {
         <>
           <div>
             <Link
-              className="focus:shadow-outline w-full rounded bg-blue-500 py-2 px-4 font-bold text-white hover:bg-blue-600 focus:outline-none"
+              className="focus:shadow-outline w-full rounded bg-teal-500 py-2 px-4 font-bold text-white hover:bg-teal-600 focus:outline-none"
               to="/signin"
             >
               SignIn
@@ -82,7 +82,7 @@ export default function Navbar() {
           </div>
           <div>
             <Link
-              className="focus:shadow-outline w-full rounded bg-green-500 py-2 px-4 font-bold text-white hover:bg-green-600 focus:outline-none"
+              className="focus:shadow-outline w-full rounded bg-violet-600 py-2 px-4 font-bold text-white hover:bg-violet-700 focus:outline-none"
               to="/login"
             >
               Login
